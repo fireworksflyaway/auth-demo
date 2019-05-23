@@ -24,6 +24,10 @@ module.exports = {
         test: /\.js|jsx$/,
         exclude: /(node_modules|bower_components)/,// 屏蔽不需要处理的文件（文件夹）（可选）
         loader: 'babel-loader'
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader','css-loader']
       }
     ]
   },
